@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    # DataGrip에서 사용하던 MySQL URL, DB 이름
+    url: jdbc:mysql://localhost:3306/database_week4?serverTimezone=Asia/Seoul
+    username: [ 사용자 이름 ]
+    password: [ 사용자 비밀번호 ]
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      # 테이블 자동 생성
+      ddl-auto: update
+    show-sql: true 
+    properties:
+      hibernate:
+        format_sql: true 
